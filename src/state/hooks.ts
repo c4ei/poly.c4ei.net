@@ -75,7 +75,7 @@ export const usePoolFromPid = (sousId): Pool => {
 
 // Prices
 export const usePriceBnbBusd = (): BigNumber => {
-  const pid = 2 // BUSD-C4EI LP
+  const pid = 2 // BUSD-MATIC LP
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
@@ -103,7 +103,7 @@ export const useFarmsValue = () => {
     const farm = farms[i]
     if (farm.lpTotalInQuoteToken) {
       let val;
-      if (farm.quoteTokenSymbol === QuoteToken.C4EI) {
+      if (farm.quoteTokenSymbol === QuoteToken.MATIC) {
         val = (bnbPrice.times(farm.lpTotalInQuoteToken))
       } else if (farm.quoteTokenSymbol === QuoteToken.CAKE) { // TODO: should be updated with quiteToken.SAWON
         val = (sawonPrice.times(farm.lpTotalInQuoteToken))
@@ -127,7 +127,7 @@ export const useLaunchPoolValue = () => {
       let val;
       if (launchPool.stakingTokenName === QuoteToken.SAWON) {
         val = sawonPrice.times(launchPool.totalStaked).div(new BigNumber(10).pow(launchPool.tokenDecimals))
-      } else if (launchPool.stakingTokenName === QuoteToken.C4EI) {
+      } else if (launchPool.stakingTokenName === QuoteToken.MATIC) {
         val = bnbPrice.times(launchPool.totalStaked).div(new BigNumber(10).pow(launchPool.tokenDecimals))
       } else {
         val = launchPool.totalStaked.div(new BigNumber(10).pow(launchPool.tokenDecimals))

@@ -72,7 +72,7 @@ const NftProgress = () => {
             {!isInitialized ? (
               '...'
             ) : (
-              <Link href={`https://exp.c4ei.net/block/${endBlockNumber}`} target="_blank" rel="noreferrer noopener">
+              <Link href={`https://polygonscan.com/block/${endBlockNumber}`} target="_blank" rel="noreferrer noopener">
                 {`Block ${endBlockNumber}`}
                 <OpenNewIcon color="primary" ml="2px" />
               </Link>

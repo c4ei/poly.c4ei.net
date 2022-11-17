@@ -51,7 +51,7 @@ const TicketCard: React.FC<{ contractLink?: string; lotteryNumber?: number }> = 
         </Button>
       </div>
       <div>
-        <ExternalLinkWrap href={contractLink}>{TranslateString(999, 'View on C4eiScan')}</ExternalLinkWrap>
+        <ExternalLinkWrap href={contractLink}>{TranslateString(999, 'View on MaticScan')}</ExternalLinkWrap>
       </div>
     </Wrapper>
   )

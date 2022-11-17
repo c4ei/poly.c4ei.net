@@ -59,16 +59,16 @@ const ComingSoon = () => {
             <Text mb={3}>
               {TranslateString(
                 504,
-                'You’ll pay for the new tokens using CAKE-C4EI LP tokens, which means you need to stake equal amounts of CAKE and C4EI in a liquidity pool to take part.',
+                'You’ll pay for the new tokens using CAKE-MATIC LP tokens, which means you need to stake equal amounts of CAKE and MATIC in a liquidity pool to take part.',
               )}
             </Text>
             <Text mb={3}>
               <LiquidityLink href="https://exchange.pancakeswap.finance/#/add/ETH/0x9a976661AcBa62E821D5562579d6a1B0324dddf2">
-                {TranslateString(506, 'Get CAKE-C4EI LP >')}
+                {TranslateString(506, 'Get CAKE-MATIC LP >')}
               </LiquidityLink>
             </Text>
             <Text mb={3}>
-              {TranslateString(508, 'The project gets the C4EI, PancakeSwap burns the CAKE.')}
+              {TranslateString(508, 'The project gets the MATIC, PancakeSwap burns the CAKE.')}
               <br />
               <strong>{TranslateString(510, 'You get the tokens.')}</strong>
             </Text>

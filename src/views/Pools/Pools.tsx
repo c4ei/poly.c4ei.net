@@ -26,7 +26,7 @@ import PoolTabButtons from './components/PoolTabButtons'
 import Divider from './components/Divider'
 
 const SAWON = new Token(ChainId.MAINNET, '0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66', 18)
-const C4EI = new Token(ChainId.MAINNET, '0x41b02ED26Da14a3CC790B861174Dd4AD02213790', 18)
+const MATIC = new Token(ChainId.MAINNET, '0x41b02ED26Da14a3CC790B861174Dd4AD02213790', 18)
 
 const Pools: React.FC = () => {
   const { path } = useRouteMatch()
@@ -86,7 +86,7 @@ const Pools: React.FC = () => {
               const TOKEN = new Token(ChainId.MAINNET, mytoken, _tokenDecimals)
               Fetcher.fetchPairData(
                 TOKEN,
-                C4EI,
+                MATIC,
                 getDefaultProvider('https://patient-long-flower.bsc.quiknode.pro/e8d35735534a1fa9c3680c58e16b3847be567cf4/'),
               ).then((pairData) =>
                 setPrice(
@@ -157,7 +157,7 @@ const Pools: React.FC = () => {
               const TOKEN = new Token(ChainId.MAINNET, mytoken, _tokenDecimals)
               Fetcher.fetchPairData(
                 TOKEN,
-                C4EI,
+                MATIC,
                 getDefaultProvider('https://patient-long-flower.bsc.quiknode.pro/e8d35735534a1fa9c3680c58e16b3847be567cf4/'),
               ).then((pairData) =>
 
@@ -188,7 +188,7 @@ const Pools: React.FC = () => {
 
   const priceToBnb = (tokenName: string, tokenPrice: BigNumber, quoteToken: QuoteToken): BigNumber => {
     const tokenPriceBN = new BigNumber(tokenPrice)
-    if (tokenName === 'C4EI') {
+    if (tokenName === 'MATIC') {
       return new BigNumber(1)
     }
     if (tokenPrice && quoteToken === QuoteToken.BUSD) {
@@ -249,7 +249,7 @@ const Pools: React.FC = () => {
       }
     }
     // console.log('RewardPrice', address, bbprice.toNumber(), price.toNumber())
-    // /!\ Assume that the farm quote price is C4EI
+    // /!\ Assume that the farm quote price is MATIC
     const stakingTokenPriceInBNB = isBnbPool ? new BigNumber(1) : new BigNumber(stakingTokenFarm?.tokenPriceVsQuote)
 
     /*

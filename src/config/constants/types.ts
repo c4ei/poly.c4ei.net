@@ -33,14 +33,14 @@ export enum QuoteToken {
   // 'PLUM' = 'PLUM',
   // 'SLIME' = 'SLIME',
   // 'TAKO' = 'TAKO'
-  'C4EI' = 'C4EI',
+  'MATIC' = 'MATIC',
 }
 
 export enum PoolCategory {
   'COMMUNITY' = 'Community',
   'CORE' = 'Core',
-  'BINANCE' = 'Binance', // Pools using native C4EI behave differently than pools using a token
-  'C4EI' = 'C4ei', // Pools using native C4EI behave differently than pools using a token
+  'BINANCE' = 'Binance', // Pools using native MATIC behave differently than pools using a token
+  'MATIC' = 'Matic', // Pools using native MATIC behave differently than pools using a token
 }
 
 export interface Address {

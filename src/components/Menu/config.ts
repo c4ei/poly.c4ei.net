@@ -73,7 +73,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'SAWON Scan',
-        href: 'https://exp.c4ei.net/account/0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66',
+        href: 'https://polygonscan.com/account/0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66',
       },
       // {
       //   label: 'SAWON Price Graph',
@@ -81,7 +81,7 @@ const config: MenuEntry[] = [
       // }
       // ,{
       //   label: 'TOFY BSC Scan',
-      //   href: 'https://exp.c4ei.net/token/0xe1f2d89a6c79b4242f300f880e490a70083e9a1c',
+      //   href: 'https://polygonscan.com/token/0xe1f2d89a6c79b4242f300f880e490a70083e9a1c',
       // },
       // {
       //   label: 'TOFY Price Graph',

@@ -12,9 +12,9 @@ import BigNumber from 'bignumber.js'
 const CHAIN_ID = process.env.REACT_APP_CHAIN_ID
 
 // Pool 0, Cake / Cake is a different kind of contract (master chef)
-// C4EI pools use the native C4EI token (wrapping ? unwrapping is done at the contract level)
-const nonBnbPools = poolsConfig.filter((p) => p.stakingTokenName !== QuoteToken.C4EI)
-const bnbPools = poolsConfig.filter((p) => p.stakingTokenName === QuoteToken.C4EI)
+// MATIC pools use the native MATIC token (wrapping ? unwrapping is done at the contract level)
+const nonBnbPools = poolsConfig.filter((p) => p.stakingTokenName !== QuoteToken.MATIC)
+const bnbPools = poolsConfig.filter((p) => p.stakingTokenName === QuoteToken.MATIC)
 const nonMasterPools = poolsConfig.filter((p) => p.sousId !== 0)
 const web3 = getWeb3()
 const masterChefContract = new web3.eth.Contract((masterChefABI as unknown) as AbiItem, getMasterChefAddress())
@@ -34,7 +34,7 @@ export const fetchPoolsAllowance = async (account) => {
 }
 
 export const fetchUserBalances = async (account) => {
-  // Non C4EI pools
+  // Non MATIC pools
   const calls = nonBnbPools.map((p) => ({
     address: p.stakingTokenAddress,
     name: 'balanceOf',
@@ -46,7 +46,7 @@ export const fetchUserBalances = async (account) => {
     {},
   )
 
-  // C4EI pools
+  // MATIC pools
   const bnbBalance = await web3.eth.getBalance(account)
   const bnbBalances = bnbPools.reduce(
     (acc, pool) => ({ ...acc, [pool.sousId]: new BigNumber(bnbBalance).toJSON() }),

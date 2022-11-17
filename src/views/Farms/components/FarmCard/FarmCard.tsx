@@ -94,7 +94,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
   const [showExpandableSection, setShowExpandableSection] = useState(false)
 
   // const isCommunityFarm = communityFarms.includes(farm.tokenSymbol)
-  // We assume the token name is coin pair + lp e.g. CAKE-C4EI LP, LINK-C4EI LP,
+  // We assume the token name is coin pair + lp e.g. CAKE-MATIC LP, LINK-MATIC LP,
   // NAR-CAKE LP. The images should be cake-c4ei.svg, link-c4ei.svg, nar-cake.svg
   // const farmImage = farm.lpSymbol.split(' ')[0].toLocaleLowerCase()
   let farmImage;
@@ -115,7 +115,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
     if (!farm.lpTotalInQuoteToken) {
       return null
     }
-    if (farm.quoteTokenSymbol === QuoteToken.C4EI) {
+    if (farm.quoteTokenSymbol === QuoteToken.MATIC) {
       return bnbPrice.times(farm.lpTotalInQuoteToken)
     }
     if (farm.quoteTokenSymbol === QuoteToken.CAKE) {
@@ -190,9 +190,9 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
           isTokenOnly={farm.isTokenOnly}
           bscScanAddress={
             farm.isTokenOnly ?
-              `https://exp.c4ei.net/account/${farm.tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
+              `https://polygonscan.com/account/${farm.tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
               :
-              `https://exp.c4ei.net/account/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`
+              `https://polygonscan.com/account/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`
           }
           totalValueFormated={totalValueFormated}
           lpLabel={lpLabel}

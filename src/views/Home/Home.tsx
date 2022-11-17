@@ -67,7 +67,7 @@ const Home: React.FC = () => {
     <Page>
       <Hero>
         <Heading as="h1" size="xl" mb="24px" color="secondary">
-          Polygon (137) ONLY / <a href="https://farm.c4ei.net">go C4EI</a>/ <a href="https://klay.c4ei.net">go KLAY</a>
+          Polygon (137) ONLY / <a href="https://farm.c4ei.net">go MATIC</a>/ <a href="https://klay.c4ei.net">go KLAY</a>
         </Heading>
       </Hero>
       <div>

@@ -4,7 +4,7 @@ poly.c4ei.net
 사원토큰 SaWonDeFi
 https://polygonscan.com/token/0x52d1ec2ed762d7fb3be336ec678569c730b87d66
 
-마스터쉐프 : 0x55aC08Ccc202057f3a6B5098285c9C95da3338bD
+마스터쉐프 : 0x57f03b198C0e9F0c93288F4b7a0dfC9db0Dc5010
 sawon : 0x52d1ec2ed762d7fb3be336ec678569c730b87d66
 ###########################################################################
 (1) 네트워크 이름 : Polygon Mainnet

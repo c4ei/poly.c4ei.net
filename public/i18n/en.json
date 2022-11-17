@@ -213,7 +213,7 @@
     {
       "data": {
         "stringId": 356,
-        "text": "View on C4eiScan"
+        "text": "View on MaticScan"
       }
     },
     {
@@ -567,19 +567,19 @@
     {
       "data": {
         "stringId": 504,
-        "text": "You\u2019ll pay for the new tokens using SAWON-C4EI LP tokens, which means you need to stake equal amounts of SAWON and C4EI in a liquidity pool to take part."
+        "text": "You\u2019ll pay for the new tokens using SAWON-MATIC LP tokens, which means you need to stake equal amounts of SAWON and MATIC in a liquidity pool to take part."
       }
     },
     {
       "data": {
         "stringId": 506,
-        "text": "Get SAWON-C4EI LP >"
+        "text": "Get SAWON-MATIC LP >"
       }
     },
     {
       "data": {
         "stringId": 508,
-        "text": "The project gets the C4EI, MarshmallowDeFi burns the SAWON."
+        "text": "The project gets the MATIC, MarshmallowDeFi burns the SAWON."
       }
     },
     {
@@ -813,13 +813,13 @@
     {
       "data": {
         "stringId": 596,
-        "text": "Buy SAWON and C4EI tokens"
+        "text": "Buy SAWON and MATIC tokens"
       }
     },
     {
       "data": {
         "stringId": 598,
-        "text": "Get SAWON-C4EI LP tokens by adding SAWON and C4EI liquidity"
+        "text": "Get SAWON-MATIC LP tokens by adding SAWON and MATIC liquidity"
       }
     },
     {

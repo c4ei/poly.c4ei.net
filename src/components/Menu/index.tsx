@@ -26,7 +26,7 @@ const Menu = (props) => {
         setLang={setSelectedLanguage}
         cakePriceUsd={cakePriceUsd.toNumber()}
         links={config}
-        priceLink="https://exp.c4ei.net/account/0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66"
+        priceLink="https://polygonscan.com/account/0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66"
         {...props}
       />
     </>

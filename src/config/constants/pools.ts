@@ -5,7 +5,7 @@ const SAWON = 'SAWON';
 const pools: PoolConfig[] = [
   // {
   //   sousId: 1,
-  //   tokenName: 'SAWON-C4EI LP',
+  //   tokenName: 'SAWON-MATIC LP',
   //   stakingTokenName: QuoteToken[SAWON],
   //   stakingTokenAddress: '0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66',
   //   contractAddress: {
