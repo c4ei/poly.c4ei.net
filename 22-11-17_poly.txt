@@ -1,0 +1,42 @@
+22-11-17
+poly.c4ei.net
+
+사원토큰 SaWonDeFi
+https://polygonscan.com/token/0x52d1ec2ed762d7fb3be336ec678569c730b87d66
+
+마스터쉐프 : 0x55aC08Ccc202057f3a6B5098285c9C95da3338bD
+sawon : 0x52d1ec2ed762d7fb3be336ec678569c730b87d66
+###########################################################################
+(1) 네트워크 이름 : Polygon Mainnet
+(2) 새 RPC URL : https://polygon-rpc.com/
+(3) 체인 ID : 137
+(4) 통화 기호 (옵션) : MATIC
+(5) 블록 탐색기 URL (옵션) : https://polygonscan.com
+###########################################################################
+
+https://swap.c4ei.net/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.png
+Polygon 
+cake : 0x9a976661AcBa62E821D5562579d6a1B0324dddf2
+PancakeRouter address : 0x60dFDE0961435C6aAA9AB3414c60CCc5DdaF846f
+_factory (address): 0xA535eb8C8E0DdeF9Bc19fbE3614c44211D8142d8
+_WETH (WBNB :) 0x41b02ED26Da14a3CC790B861174Dd4AD02213790
+
+packages/swap-sdk/src/entities/token.ts (56:14) @ Token.sortsBefore
+
+2022-11-16 할일 !!!!!
+https://swap.c4ei.net/add/0x9a976661AcBa62E821D5562579d6a1B0324dddf2/0x900b38cf92A9b7FfecF069519F75905c2E29cd4F?chainId=137
+allPairs 0 CAKE-BUSD --> 0x9a976661AcBa62E821D5562579d6a1B0324dddf2/0x900b38cf92A9b7FfecF069519F75905c2E29cd4F
+	--> LP (PancakePair): 0x4f4d09C4F495A901F20581b6e4b0259FDdbdFCc7 (2022-11-16)
+
+https://swap.c4ei.net/add/0x9a976661AcBa62E821D5562579d6a1B0324dddf2/0x41b02ED26Da14a3CC790B861174Dd4AD02213790?chainId=137
+allPairs 1 CAKE-WBNB --> 0x9a976661AcBa62E821D5562579d6a1B0324dddf2/0x41b02ED26Da14a3CC790B861174Dd4AD02213790
+	--> LP (PancakePair): 0xF8A951940859C4b7241dd1606976c5E571959312 (2022-11-16)
+
+https://swap.c4ei.net/add/0x41b02ED26Da14a3CC790B861174Dd4AD02213790/0x900b38cf92A9b7FfecF069519F75905c2E29cd4F?chainId=137
+allPairs 2 WBNB-BUSD --> 0x41b02ED26Da14a3CC790B861174Dd4AD02213790/0x900b38cf92A9b7FfecF069519F75905c2E29cd4F
+	--> LP (PancakePair): 0xf91B1B3a6b7a934B645cE203317B545202538E23 (2022-11-16)
+	
+0 CAKE-BUSD --> LP 0x4f4d09C4F495A901F20581b6e4b0259FDdbdFCc7
+1 CAKE-WBNB --> LP 0xF8A951940859C4b7241dd1606976c5E571959312
+2 WBNB-BUSD --> LP 0xf91B1B3a6b7a934B645cE203317B545202538E23
+
