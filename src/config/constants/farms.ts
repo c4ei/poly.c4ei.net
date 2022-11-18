@@ -14,10 +14,10 @@ const farms: FarmConfig[] = [
     image: 'sawon-busd',
   },
   {
-    pid: 1,
+    pid: 4, // 2022-11-18
     risk: 2,
-    lpSymbol: 'SAWON-MATIC LP',
-    lpAddresses: { 137: '0x59Ab84C3aEcd642eaf802d3D25E080db7A655558', }, // SAWON-MATIC LP swap.c4ei.net 137
+    lpSymbol: 'SAWON-wMATIC LP',
+    lpAddresses: { 137: '0x91BE7d2884Ec195107598D607105Be9dc2265E7B', }, // SAWON-MATIC LP swap.c4ei.net 137
     tokenSymbol: 'SAWON',
     tokenAddresses: { 137: '0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66', }, // SaWonToken
     quoteTokenSymbol: QuoteToken.MATIC,
@@ -26,12 +26,12 @@ const farms: FarmConfig[] = [
     // isDisplay: 'N',
   },
   {
-    pid: 2,
+    pid: 5,
     risk: 1,
-    lpSymbol: 'MATIC-BUSD LP',
-    lpAddresses: { 137: '0xf91B1B3a6b7a934B645cE203317B545202538E23', },
+    lpSymbol: 'wMATIC-BUSD LP',
+    lpAddresses: { 137: '0xF508DfA40709Fd456A136B47cB5ab363AD039f7f', },
     tokenSymbol: 'MATIC',
-    tokenAddresses: { 137: '0x41b02ED26Da14a3CC790B861174Dd4AD02213790', }, // wbnb (0x41b02ED26Da14a3CC790B861174Dd4AD02213790) --> wklay ? 
+    tokenAddresses: { 137: '0x1Ae6B1fdDE78CB36dc9BF1D4D0eCDC81539fD369', },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
     // isDisplay: 'N',

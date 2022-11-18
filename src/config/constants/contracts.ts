@@ -8,7 +8,7 @@ export default {
     97: '',
   },
   wbnb: {
-    137: '0x41b02ED26Da14a3CC790B861174Dd4AD02213790',
+    137: '0x1Ae6B1fdDE78CB36dc9BF1D4D0eCDC81539fD369',
     97: '',
   },
   lottery: {

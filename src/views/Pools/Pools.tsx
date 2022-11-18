@@ -26,7 +26,7 @@ import PoolTabButtons from './components/PoolTabButtons'
 import Divider from './components/Divider'
 
 const SAWON = new Token(ChainId.MAINNET, '0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66', 18)
-const MATIC = new Token(ChainId.MAINNET, '0x41b02ED26Da14a3CC790B861174Dd4AD02213790', 18)
+const MATIC = new Token(ChainId.MAINNET, '0x1Ae6B1fdDE78CB36dc9BF1D4D0eCDC81539fD369', 18)
 
 const Pools: React.FC = () => {
   const { path } = useRouteMatch()
@@ -49,7 +49,7 @@ const Pools: React.FC = () => {
         if (_token !== '') {
           const mytoken = `0x${_token.substring(2).toUpperCase()}`
 
-          if (mytoken !== '0x41b02ED26Da14a3CC790B861174Dd4AD02213790') {
+          if (mytoken !== '0x1Ae6B1fdDE78CB36dc9BF1D4D0eCDC81539fD369') {
             // console.log('aj ****** isLp', _isLp, mytoken)
             if (_isLp === true) {
               console.log('myLPtokenDATA11')
@@ -96,7 +96,7 @@ const Pools: React.FC = () => {
                 ),
               )
             }
-          } else if (mytoken === '0x41b02ED26Da14a3CC790B861174Dd4AD02213790') {
+          } else if (mytoken === '0x1Ae6B1fdDE78CB36dc9BF1D4D0eCDC81539fD369') {
             setPrice(new BigNumber(1))
           }
         }
@@ -119,7 +119,7 @@ const Pools: React.FC = () => {
           console.log('tokeeeeeen STAKEE', _token)
           const mytoken = `0x${_token.substring(2).toUpperCase()}`
 
-          if (mytoken !== '0x41b02ED26Da14a3CC790B861174Dd4AD02213790') {
+          if (mytoken !== '0x1Ae6B1fdDE78CB36dc9BF1D4D0eCDC81539fD369') {
             console.log('isLp STAKEE', _isLp)
             if (_isLp === true) {
               console.log('myLPtokenDATA11 STAKEE')
@@ -172,7 +172,7 @@ const Pools: React.FC = () => {
 
 
 
-          } else if (mytoken === '0x41b02ED26Da14a3CC790B861174Dd4AD02213790') {
+          } else if (mytoken === '0x1Ae6B1fdDE78CB36dc9BF1D4D0eCDC81539fD369') {
             setPrice(new BigNumber(1))
           }
         }
