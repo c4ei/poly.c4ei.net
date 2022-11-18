@@ -47,4 +47,10 @@ allPairs 2 WBNB-BUSD --> 0x1Ae6B1fdDE78CB36dc9BF1D4D0eCDC81539fD369/0x900b38cf92
 관련 삭제
 /src/App.tsx
 {/* <NftGlobalNotification /> */}
+// Prices
+export const usePriceBnbBusd = (): BigNumber => {
+  const pid = 5 // BUSD-wMATIC LP 22-11-18   --> 0xF508DfA40709Fd456A136B47cB5ab363AD039f7f
+  const farm = useFarmFromPid(pid)
+  return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
+}
 
